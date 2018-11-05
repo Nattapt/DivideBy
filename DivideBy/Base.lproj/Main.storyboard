@@ -28,18 +28,23 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wB-z8-CdQ">
-                                <rect key="frame" x="34" y="65" width="307" height="60"/>
+                                <rect key="frame" x="32" y="65" width="311" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="4" height="4"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNO-Yy-7He">
-                                <rect key="frame" x="16.5" y="595" width="114" height="62"/>
-                                <state key="normal" title="Check" image="Check.png"/>
+                                <rect key="frame" x="16.5" y="595" width="62" height="62"/>
+                                <state key="normal" image="CheckBT.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9s-rD-Efv">
                                 <rect key="frame" x="90" y="478" width="194" height="62"/>
                                 <state key="normal" title="Random" image="RandomBT.png"/>
+                                <connections>
+                                    <action selector="randomBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pSX-UC-qeN"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qfc-7H-9ak">
                                 <rect key="frame" x="16.5" y="233" width="342" height="201"/>
@@ -116,22 +121,39 @@
                                     <constraint firstAttribute="height" constant="36" id="tK3-Si-M0O"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.8932807445526123" green="0.79268425703048706" blue="0.2010246217250824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueP-Hz-AmX">
+                                <rect key="frame" x="147.5" y="608" width="80.5" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="hEf-pe-8n7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="2ms-Qh-erx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="2ms-Qh-erx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2sD-F0-Kvu"/>
                             <constraint firstItem="42O-UX-4bt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="152" id="48L-sm-7g9"/>
                             <constraint firstItem="42O-UX-4bt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="56" id="55w-Zq-f5w"/>
+                            <constraint firstItem="ueP-Hz-AmX" firstAttribute="centerY" secondItem="IWa-vQ-QpY" secondAttribute="centerY" id="Bho-Gg-oPN"/>
                             <constraint firstItem="w9s-rD-Efv" firstAttribute="top" secondItem="qfc-7H-9ak" secondAttribute="bottom" constant="44" id="G1N-d1-B8j"/>
                             <constraint firstItem="qfc-7H-9ak" firstAttribute="top" secondItem="42O-UX-4bt" secondAttribute="bottom" constant="45" id="LOa-AO-Zr4"/>
+                            <constraint firstItem="2ms-Qh-erx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Uux-US-nj2"/>
                             <constraint firstItem="6wB-z8-CdQ" firstAttribute="centerX" secondItem="w9s-rD-Efv" secondAttribute="centerX" id="WEB-hH-Q6x"/>
+                            <constraint firstItem="ueP-Hz-AmX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xc4-b0-BIt"/>
                             <constraint firstItem="6wB-z8-CdQ" firstAttribute="centerX" secondItem="qfc-7H-9ak" secondAttribute="centerX" id="Ypz-C4-Crn"/>
                             <constraint firstItem="qfc-7H-9ak" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16.5" id="ZeY-mz-pPr"/>
                             <constraint firstItem="qfc-7H-9ak" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aW8-gQ-0sz"/>
                             <constraint firstItem="IWa-vQ-QpY" firstAttribute="trailing" secondItem="0Ud-WD-p7q" secondAttribute="trailing" id="c3j-ue-9UC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IWa-vQ-QpY" secondAttribute="bottom" constant="10" id="fGT-6Z-DGj"/>
+                            <constraint firstItem="2ms-Qh-erx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hDA-IE-dmc"/>
                             <constraint firstItem="SNO-Yy-7He" firstAttribute="leading" secondItem="wVV-t9-PpK" secondAttribute="leading" id="hnp-XJ-RlG"/>
                             <constraint firstItem="6wB-z8-CdQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="hqZ-zr-wka"/>
                             <constraint firstItem="42O-UX-4bt" firstAttribute="centerX" secondItem="6wB-z8-CdQ" secondAttribute="centerX" id="j22-5a-KSJ"/>
@@ -139,9 +161,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SNO-Yy-7He" secondAttribute="bottom" constant="10" id="qIO-jU-dLo"/>
                             <constraint firstItem="w9s-rD-Efv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="qwM-G7-iSX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qfc-7H-9ak" secondAttribute="trailing" constant="16.5" id="xyn-QZ-HRE"/>
+                            <constraint firstItem="2ms-Qh-erx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yTR-t0-pcN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="randomNumber" destination="6wB-z8-CdQ" id="fTP-h2-Ym4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -150,7 +176,7 @@
     </scenes>
     <resources>
         <image name="8" width="16" height="16"/>
-        <image name="Check.png" width="62" height="62"/>
+        <image name="CheckBT.png" width="62" height="62"/>
         <image name="ExitBT.png" width="62" height="62"/>
         <image name="RandomBT.png" width="194" height="62"/>
         <image name="Yellow10.png" width="62" height="62"/>
@@ -168,5 +194,6 @@
         <image name="Yellow7.png" width="62" height="62"/>
         <image name="Yellow8.png" width="62" height="62"/>
         <image name="Yellow9.png" width="62" height="62"/>
+        <image name="background.jpeg" width="168" height="299"/>
     </resources>
 </document>

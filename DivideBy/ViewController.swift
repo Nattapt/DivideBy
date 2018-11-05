@@ -10,6 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var randomNumber: UILabel!
+    
+    @IBAction func randomBT(_ sender: Any) {
+        let number = Int.random(in: 0 ... 9999999999)
+        randomNumber.text = String(number)
+    }
 
+    @IBAction func checkBT(_ sender: Any) {
+    }
+    
+    @IBAction func exitBT(_ sender: Any) {
+    }
 }
 
