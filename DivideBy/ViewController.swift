@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func exitBT(_ sender: Any) {
+        exit(0);
     }
+    
 }
 
