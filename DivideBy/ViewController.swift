@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let number = Int.random(in: 0 ... 9999999999)
+    var number = Int.random(in: 0 ... 9999999999)
     
     @IBOutlet weak var randomNumber: UILabel!
     @IBOutlet weak var result: UILabel!
@@ -20,9 +20,11 @@ class ViewController: UIViewController {
 
     func divideby(divider: Int) {
         if (number % divider == 0) {
-            result.text = "หารด้วย \(divider) ลงตัว"
+            result.text = "\(divider) is the factor"
+            result.textColor = UIColor.green
         } else {
-            result.text = "หารด้วย \(divider) ไม่ลงตัว"
+            result.text = "\(divider) is not the factor"
+            result.textColor = UIColor.red
         }
     }
     
