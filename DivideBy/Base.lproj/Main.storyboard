@@ -66,14 +66,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9j-U0-iGl">
                                                 <rect key="frame" x="140" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="4" image="Yellow4.png"/>
+                                                <connections>
+                                                    <action selector="bt4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cfx-OX-fI9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biD-Gs-YAi">
                                                 <rect key="frame" x="210" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="5" image="Yellow5.png"/>
+                                                <connections>
+                                                    <action selector="bt5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bja-wZ-4Ae"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XP3-77-Ru4">
                                                 <rect key="frame" x="280" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="6" image="Yellow6.png"/>
+                                                <connections>
+                                                    <action selector="bt6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kz7-M0-yP2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -83,22 +92,37 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkq-sY-lSb">
                                                 <rect key="frame" x="0.0" y="0.0" width="62" height="61"/>
                                                 <state key="normal" title="7" image="Yellow7.png"/>
+                                                <connections>
+                                                    <action selector="bt7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxd-8Q-cJb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpC-xp-eGn">
                                                 <rect key="frame" x="70" y="0.0" width="62" height="61"/>
                                                 <state key="normal" title="8" image="Yellow8.png"/>
+                                                <connections>
+                                                    <action selector="bt8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u3c-B0-uIN"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4JC-cT-Hko">
                                                 <rect key="frame" x="140" y="0.0" width="62" height="61"/>
                                                 <state key="normal" title="9" image="Yellow9.png"/>
+                                                <connections>
+                                                    <action selector="bt9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ej3-KK-dEJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZ6-HI-fMn">
                                                 <rect key="frame" x="210" y="0.0" width="62" height="61"/>
                                                 <state key="normal" title="10" image="Yellow10.png"/>
+                                                <connections>
+                                                    <action selector="bt10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nxH-fM-Ith"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXP-0X-Nrn">
                                                 <rect key="frame" x="280" y="0.0" width="62" height="61"/>
                                                 <state key="normal" title="11" image="Yellow11.png"/>
+                                                <connections>
+                                                    <action selector="bt11:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rRy-GQ-VKy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -108,22 +132,37 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ch7-c0-Mui">
                                                 <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="12" image="Yellow12.png"/>
+                                                <connections>
+                                                    <action selector="bt12:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OZw-HE-unS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFl-6u-500">
                                                 <rect key="frame" x="70" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="13" image="Yellow13.png"/>
+                                                <connections>
+                                                    <action selector="bt13:" destination="BYZ-38-t0r" eventType="touchUpInside" id="68t-E8-Z4t"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0h-ov-8Kp">
                                                 <rect key="frame" x="140" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="14" image="Yellow14.png"/>
+                                                <connections>
+                                                    <action selector="bt14:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hXl-m4-8F7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRw-Mi-OsS">
                                                 <rect key="frame" x="210" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="15" image="Yellow15.png"/>
+                                                <connections>
+                                                    <action selector="bt15:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8T-61-S9c"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ta7-BI-Y2O">
                                                 <rect key="frame" x="280" y="0.0" width="62" height="62"/>
                                                 <state key="normal" title="16" image="Yellow16.png"/>
+                                                <connections>
+                                                    <action selector="bt16:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yYy-Je-czW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
