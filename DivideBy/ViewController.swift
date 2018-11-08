@@ -9,14 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var randomNumber: UILabel!
     
+    let number = Int.random(in: 0 ... 9999999999)
+    
+    @IBOutlet weak var randomNumber: UILabel!
+    @IBOutlet weak var result: UILabel!
     @IBAction func randomBT(_ sender: Any) {
-        let number = Int.random(in: 0 ... 9999999999)
         randomNumber.text = String(number)
     }
 
+    func divideby(divider: Int) {
+        if (number % divider == 0) {
+            result.text = "หารด้วย \(divider) ลงตัว"
+        } else {
+            result.text = "หารด้วย \(divider) ไม่ลงตัว"
+        }
+    }
+    
+    @IBAction func bt2(_ sender: Any) {
+        divideby(divider: 2)
+    }
+    @IBAction func bt3(_ sender: Any) {
+        divideby(divider: 3)
+    }
+    
+    
     @IBAction func checkBT(_ sender: Any) {
     }
     
